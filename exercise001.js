@@ -1,4 +1,4 @@
-const promise = new Promise((resolve, reject) => {
+const somePromiseObject = new Promise((resolve, reject) => {
 	// Generate random number between 0 and 9
 const randomInt = Math.floor(Math.random() * 10);
   
@@ -11,14 +11,14 @@ const randomInt = Math.floor(Math.random() * 10);
 	}
   });
   
-  const consumePromise = async () => {
+  const getPromiseResponse = async () => {
 	try {
-	  const response = await promise;
+	  const response = await somePromiseObject;
 	  console.log(`Yay! Promise resolved with response: ${response}`);
 	} catch (error) {
 	  console.log(`Boo. Promise rejected with response: ${error}`);
 	}
   };
-  consumePromise();
+  getPromiseResponse();
   
   
