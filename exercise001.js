@@ -17,5 +17,5 @@ promise
 	console.log('Yay! Promise resolved with response:',resultAsString)
 })
 .catch(error=>{
-	console.log('Boo. Promise rejected with response: ,${error}')
+	console.log('Boo. Promise rejected with response: ,{error}')
 })
