@@ -13,7 +13,8 @@ const promise = new Promise((resolve, reject) => {
 
 promise
 .then(result=>{
-	console.log('Yay! Promise resolved with response:',result)
+	const resultAsString = String(result);
+	console.log('Yay! Promise resolved with response:',resultAsString)
 })
 .catch(error=>{
 	console.log('Boo. Promise rejected with response: ',error)
