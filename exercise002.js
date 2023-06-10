@@ -1,16 +1,14 @@
 import fetch from "node-fetch";
 
-const jsonTypicode = "https://jsonplaceholder.typicode.com/todos/1";
-
-const fetchData =  async (apiEndPoint) => {
+const fetchData = async (apiEndpoint) => {
   try {
-    const response = await fetch(apiEndPoint);
-    const json = await response.json();
-    console.log(json);
+    const response = await fetch(apiEndpoint);
+    const data = await response.json();
+    console.log(data);
   } catch (error) {
     console.log(error);
   }
 };
 
-
-fetchData(jsonTypicode);
+const apiEndpoint = "https://getrit.com/API/Token?ref=apilist.fun";
+fetchData(apiEndpoint);
